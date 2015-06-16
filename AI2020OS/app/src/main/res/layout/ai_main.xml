@@ -9,8 +9,47 @@
                 tools:context=".AIMainActivity">
 
 	<TextView
+        android:id="@+id/hello_world1"
 		android:text="@string/hello_world"
 		android:layout_width="wrap_content"
 		android:layout_height="wrap_content"/>
+    <TextView
+        android:text="@string/hello_world"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello_world1"
+        android:id="@+id/textView"/>
+
+    <RadioButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择按钮"
+        android:id="@+id/radioButton"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="37dp"
+        android:checked="true"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="选择了"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/radioButton"
+        android:layout_alignLeft="@+id/radioButton"
+        android:layout_alignStart="@+id/radioButton"
+        android:layout_marginTop="28dp"/>
+
+    <ProgressBar
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/progressBar"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="38dp"
+        android:progress="100"
+        android:indeterminate="true"
+        android:max="@integer/abc_config_activityDefaultDur"/>
 
 </RelativeLayout>
